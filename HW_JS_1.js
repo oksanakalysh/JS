@@ -10,7 +10,7 @@ console.log(item_2)
 let item_3 = item_1 + item_2
 console.log(item_3)
 
-let item_4 = "Yolochka"
+let item_4 = "Yalynka"
 console.log(item_4)
 
 console.log(item_3 + item_4)
