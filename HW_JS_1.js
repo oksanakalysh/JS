@@ -13,9 +13,9 @@ console.log(item_3)
 let item_4 = "Yolochka"
 console.log(item_4)
 
-console.log(item_3 + " + " + item_4)
+console.log(item_3 + item_4)
 
-console.log(item_3 + " * " + item_4)
+console.log(item_3 * item_4)
 
 let item_5 = item_3
 
@@ -43,4 +43,6 @@ if (age_1 < age_2) {
   console.log("Welcome!")
 } else if (age_1 > age_3) {
   console.log("Keep calm and look Cultural channel")
+} else {
+  console.log("Technical work")
 }
