@@ -1,5 +1,4 @@
 //  HW_1_Java Script
-// student: @curly_kksiu
 
 let item_1 = 5
 console.log(item_1)
