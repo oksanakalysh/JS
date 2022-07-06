@@ -47,26 +47,22 @@ printSmile(':)', 4)
 
 // Checks: 'case', 'Case', 'Check-list'
 
-{console.log('Number of vowels in the word "word":' + ' ' + getWordStructure('word'));
-function getWordStructure(str) {
-    let count = 0;
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    for (let char of str.toLowerCase()) {
-       if (vowels.includes(char))
-            count += 1;
-    }
-    return count;
-}}
-{console.log('Number of consonants in the word "word":' + ' ' + getWordStructure('word'));
-function getWordStructure(str) {
-    let count = 0;
-        const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
-    for (let char of str.toLowerCase()) {
-        if (consonants.includes(char)) 
-            count += 1;
-    }
-    return count;
-}}
+function getWordStructure(word) {
+    const vowels = 'aeiou'.split('');
+    const consonants = 'bcdfghjklmnpqrstvwxyz'.split('');
+    let numberOfVowels = 0;
+    let numberOfConsonants = 0;
+    for(char of word.toLowerCase()) {
+    if (vowels.includes(char)) numberOfVowels++;
+    if (consonants.includes(char)) numberOfConsonants++;
+  };
+  console.log(`Word '${word}' has ${numberOfVowels} vowels and ${numberOfConsonants} consonants.`);
+  };
+
+getWordStructure('word');
+getWordStructure('case');
+getWordStructure('Case');
+getWordStructure('Check-list');
 
 // 4**. Write a function that checks if a word is a palindrome
 // e.g. function isPalindrom(word)
