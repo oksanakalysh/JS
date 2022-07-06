@@ -3,7 +3,7 @@
 const number = 2;
 let i = 1;
 
-for (i = 1; i < 11; i++)
+for (i = 1; i < 11; i++);
 {
     console.log(number + ' ' + 'in' + ' ' + i + ' ' + 'power:' + ' ' + number**i)
 }
@@ -12,7 +12,7 @@ for (i = 1; i < 11; i++)
 const pow = function(num){
     return Math.pow(2, num);
 }
-    console.log(pow(10))
+    console.log(pow(10));
 
 //  2. Write a script that will output 5 lines to the console in such a way that :) is displayed on the first line, :) :) on the second line, and so on
 // Console example:
